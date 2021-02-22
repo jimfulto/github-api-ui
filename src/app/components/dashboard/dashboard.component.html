@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table table-bordered table-inverse">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Commit message</th>
+      </tr>
+      <tr *ngFor="let data of commitDetails">
+        <td>
+        {{data.commit.committer.name}}
+        </td>
+        <td>
+          {{data.commit.committer.email}}
+        </td>
+        <td>
+          {{data.commit.committer.date}}
+        </td>
+        <td>
+          {{data.commit.message}}
+        </td>
+      </tr>
+    </table>
+  </div>
